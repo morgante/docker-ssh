@@ -17,4 +17,5 @@ ADD 		id_rsa.pub /root/.ssh/authorized_keys
 RUN 		chown root:root /root/.ssh/authorized_keys
 
 EXPOSE		22
-ENTRYPOINT	["/usr/sbin/sshd", "-D"]
+ENTRYPOINT	["/usr/sbin/sshd"]
+CMD			["-D"]
