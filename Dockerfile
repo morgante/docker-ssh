@@ -10,7 +10,7 @@ RUN 		mkdir /root/.ssh
 RUN 		mkdir /var/run/sshd
 
 # Add our own SSH config
-# ADD 		ssh.conf /etc/ssh/sshd_config
+ADD 		ssh.conf /etc/ssh/sshd_config
 
 # NOTE: change this key to your own
 # ADD id_rsa.pub /root/.ssh/authorized_keys
