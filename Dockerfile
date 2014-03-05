@@ -9,6 +9,9 @@ RUN 		apt-get install -y openssh-server
 RUN 		mkdir /root/.ssh
 RUN 		mkdir /var/run/sshd
 
+# Add our own SSH config
+# ADD 		ssh.conf /etc/ssh/sshd_config
+
 # NOTE: change this key to your own
 # ADD id_rsa.pub /root/.ssh/authorized_keys
 # RUN chown root:root /root/.ssh/authorized_keys
